@@ -1,2 +1,3 @@
 # Clone-Project
-Practice html/css/js and etc...
+
+- 각종 사이트 clone
