@@ -1,0 +1,84 @@
+/* COMMON */
+
+/* HEADER & HEADER-TOP */
+.container {
+  width: 100%;
+  height: 200px;
+  background-color: orange;
+  position: relative;
+}
+.container .inner {
+  background-color: #fff;
+  width: 1000px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+}
+/* H-SECTION-LEFT */
+.inner > .section-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+}
+.inner > .section-left .section-left-menu {
+  display: flex;
+}
+.inner > .section-left .section-left-menu li {
+  padding-left: 5px;
+  margin-right: 10px;
+  position: relative;
+}
+.inner > .section-left .section-left-menu li::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 12px;
+  background: #ddd;
+  top: 5px;
+  left: -1px;
+}
+.inner > .section-left .section-left-menu li:first-child::after {
+  display: none;
+}
+.inner > .section-left .section-left-menu li:last-child{
+  margin-right: none;
+}
+.inner > .section-left .section-left-menu li a {
+  font-size: 12px;
+  color: #999;
+  text-decoration: none;
+}
+.inner > .section-left .section-left-menu li a:hover {
+  color: #000;
+}
+/* H-SECTION-RIGHT */
+ .inner > .section-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  
+}
+ .inner > .section-right .section-right-menu {
+  display: flex;
+}
+.inner > .section-right .section-right-menu li {
+  padding-left: 5px;
+  margin-right: 10px;
+}
+.inner > .section-right .section-right-menu li:last-child {
+  margin: none;
+}
+.inner > .section-right .section-right-menu li a {
+  font-size: 12px;
+  color: #999;
+  text-decoration: none;
+} 
+.inner > .section-right .section-right-menu li a:hover {
+  color: #000;
+}
+
+
