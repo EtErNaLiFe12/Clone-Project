@@ -5,7 +5,7 @@
   height: 100px;
   padding: 0;
   box-sizing: border-box;
-  border: 1px solid red;  
+  border: 1px solid red;
 }
 .inner {
   position: relative;
@@ -13,7 +13,7 @@
   height: 100%;
   margin: 0 auto;
   box-sizing: border-box;
-  background-color: orange;
+  border: 5px solid orange;
 }
 .inner .header-top {
   position: absolute;
@@ -64,15 +64,53 @@
 
 /* SECTION-RIGHT */
 .inner .header-top .section_right {
-
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
 }
 .inner .header-top .section_right ul {
-
+  display: flex;
 }
 .inner .header-top .section_right ul li {
-
+  position: relative;
+  padding-right: 10px;
+}
+.inner .header-top .section_left ul li:last-child {
+  padding-right: none;
+}
+.inner .header-top .section_right ul li strong {
+ background-color: #ddd;
+ border-radius: 2px;
+ color: #000; 
+}
+.inner .header-top .section_right ul li::after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 12px;
+  background: #ddd;
+  top: 4px;
+  right: 5px;
+}
+.inner .header-top .section_right ul li:last-child::after {
+  display: none;
 }
 .inner .header-top .section_right ul li a {
-
+  font-size: 12px;
+  text-decoration: none;
+  color: #999;
 }
-
+.inner .header-top .section_right ul li a > span {
+  padding-left: 3px;
+}
+.inner .header-top .section_right ul li a > div {
+  font-size: 13px;
+  color: #ccc;
+  position: relative;
+  top: 2px;
+}
+.inner .header-top .section_right ul li a:hover {
+  color: #000;
+}
