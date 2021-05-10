@@ -1,5 +1,5 @@
 /* common */
-.container {
+.ht-container {
   position: relative;
   width: 100%;
   height: 100px;
@@ -13,7 +13,7 @@
   height: 100%;
   margin: 0 auto;
   box-sizing: border-box;
-  border: 5px solid orange;
+  border: 2px solid orange;
 }
 .inner .header-top {
   position: absolute;
@@ -106,11 +106,41 @@
   padding-left: 3px;
 }
 .inner .header-top .section_right ul li a > div {
-  font-size: 13px;
+  font-size: 14px;
   color: #ccc;
   position: relative;
   top: 2px;
 }
 .inner .header-top .section_right ul li a:hover {
   color: #000;
+}
+
+/* HEADER-BOTTOM */
+.inner .header-bottom {
+  width: 100%;
+  position:absolute;
+  top: 20px;
+  bottom: 0;
+  margin: auto;
+}
+.inner .header-bottom .main_title {
+  width: 250px;
+  position:absolute;
+  bottom: 25px;
+  left: 10px;
+  color: #232323;
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 10px;
+}
+
+
+.inner .header-bottom .section_left-b {
+
+}
+
+
+
+.inner .header-bottom .section_right-b {
+
 }
